@@ -4,7 +4,7 @@
 	<groupId>com.mcnz.rps</groupId>
 	<artifactId>roshambo</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>roshambo</name>
 
@@ -55,7 +55,7 @@
 		    <configuration>
 			<repository>${docker.image.prefix}/${project.artifactId}</repository>
 			<buildArgs>
-			    <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
+			    <JAR_FILE>target/${project.build.finalName}.WAR</WAR_FILE>
 			</buildArgs>
 		    </configuration>
 		</plugin>
