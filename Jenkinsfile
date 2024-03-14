@@ -38,7 +38,7 @@ pipeline {
          stage("Build & Push Docker Image") {
             steps {
                 script {
-                    docker.withRegistry('https://registry.hub.docker.com', DOCKER_USER, DOCKER_PASS) {
+                    docker.withRegistry('https://hub.docker.com/repository/docker/kapsto/version4.1', DOCKER_USER, DOCKER_PASS) {
                         def docker_image = docker.build("${IMAGE_NAME}:${IMAGE_TAG}")
                         docker_image.push()
                         docker_image.push('latest')
