@@ -56,6 +56,20 @@
       <plugin>
         <artifactId>maven-site-plugin</artifactId>
         <configuration>
+                 <build>
+    <plugins>
+        <!-- Other plugins -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-site-plugin</artifactId>
+            <version>3.9.6</version> <!-- Specify the version here -->
+            <!-- Remove <configuration> section -->
+        </plugin>
+    </plugins>
+</build>
+
+
+                 
           <reportPlugins>
             <plugin>
               <artifactId>maven-checkstyle-plugin</artifactId>
