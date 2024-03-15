@@ -5,7 +5,7 @@ pipeline {
         maven 'Maven3'
     }
 environment {
-	    APP_NAME = "testapp-pipeline"
+	    APP_NAME = "maventest-pipeline"
             RELEASE = "1.0.0"
             DOCKER_USER = "kapsto"
             DOCKER_PASS = 'dockerhub'
