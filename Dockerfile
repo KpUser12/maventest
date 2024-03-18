@@ -1,6 +1,6 @@
 FROM tomcat:latest
-RUN cp -R  /home/ubuntu/workspace/demo/target/*  /usr/local/tomcat/webapps
-COPY  /webapp/target/*.war /usr/local/tomcat/webapps
+RUN cp -R  /home/ubuntu/workspace/demo/target/my-app.jar  /usr/local/tomcat/webapps
+COPY  /webapp/target/*.jar /usr/local/tomcat/webapps
 
 
 
