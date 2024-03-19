@@ -1,6 +1,6 @@
-FROM tomcat:latest
-RUN cp -R  /home/ubuntu/workspace/demo/target/my-app.jar  /home/ubuntu/workspace/demo
-COPY  /webapp/target/*.jar /home/ubuntu/workspace/demo
-
+FROM openjdk:8
+EXPOSE 8080
+ADD target/devops-integration.jar devops-integration.jar
+ENTRYPOINT ["java","-jar","/devops-integration.jar"]
 
 
